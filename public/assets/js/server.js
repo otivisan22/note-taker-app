@@ -1,11 +1,10 @@
-const http = require("http");
-const PORT = 8080;
-const handleRequest = (request, response) => {
-  // do something and return a response
-  response.end(`Response from ${request.url}`);
+const express = require("express");
+const PORT = 3000;
+const app = express();
+const handleRequest = (req, res) => {
+  res.send("Hello World!");
 };
-const onSuccessfulOpen = () => {
-  console.log(`Server listening on: http://localhost:${PORT}`);
-};
-const server = http.createServer(handleRequest);
-server.listen(PORT, onSuccessfulOpen);
+app.get("/", handleRequest);
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
+});
