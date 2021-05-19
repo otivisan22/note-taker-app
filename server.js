@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
 app.use(express.static("public"));
 
+app.use("/",htmlRoutes)
 const handleRequest = (req, res) => {
   res.send("");
 };
