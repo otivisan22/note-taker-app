@@ -4,3 +4,5 @@ const getAllNotes = (req, res) => {
   const notes = JSON.parse(getFromDb());
   res.send(notes);
 };
+
+module.exports = getAllNotes;
