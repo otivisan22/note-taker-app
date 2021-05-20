@@ -11,3 +11,5 @@ const deleteNote = (req, res) => {
   writeToDb(newData);
   res.json(newData);
 };
+
+module.exports = deleteNote;
