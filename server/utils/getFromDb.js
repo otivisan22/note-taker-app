@@ -1,15 +1,10 @@
-const fs = require("fs");
 const path = require("path");
+const fs = require("fs");
 
 const getFromDb = () => {
-  try {
-    const filePath = path.join(__dirname, "../db/db.json");
-    const data = fs.readFileSync(filePath, "utf-8");
-
-    return JSON.parse(data);
-  } catch (err) {
-    console.log(err);
-  }
+  const filePath = path.join(__dirname, "../db/db.json");
+  const dbData = fs.readFileSync(filePath, "utf-8");
+  return JSON.parse(dbData);
 };
 
 module.exports = getFromDb;
