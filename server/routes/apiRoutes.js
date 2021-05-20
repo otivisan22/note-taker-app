@@ -1,10 +1,13 @@
 const { Router } = require("express");
 
-const { sendHelloData, sendByeData } = require("./controllers/apiControllers");
+const getAllNotes = require("../controllers/getAllNotes.js");
+const saveNewNote = require("../controllers/saveNewNote.js");
+const deleteNewNote = require("../controllers/deleteNewNote.js");
 
-const apiRouter = Router();
+const router = Router();
 
-apiRouter.get("/notes", sendHelloData);
-apiRouter.get("/notes/:id", sendByeData);
+router.get("/notes", getAllNotes);
+router.get("/notes", saveNewNote);
+router.get("/notes/:id", deleteNewNote);
 
-module.exports = apiRouter;
+module.exports = router;
