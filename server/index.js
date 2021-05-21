@@ -3,8 +3,8 @@ const cors = require("cors");
 
 const app = express();
 
-const apiRoutes = require("./server/routes/apiRoutes");
-const htmlRoutes = require("./server/routes/htmlRoutes");
+const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes");
 
 const PORT = process.env.PORT || 3000;
 

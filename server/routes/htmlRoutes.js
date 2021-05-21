@@ -1,9 +1,10 @@
 const { Router } = require("express");
 
-const { renderIndexPage, renderNotesPage } = require("../controller/html.js");
+const { renderIndexPage, renderNotePage } = require("../controllers/html");
 
-const router = Router();
+const htmlRouter = Router();
 
-htmlRouter.get("/", renderIndexPage), htmlRouter.get("/notes", renderNotesPage);
+htmlRouter.get("/", renderIndexPage);
+htmlRouter.get("/notes", renderNotePage);
 
-module.exports = router;
+module.exports = htmlRouter;
