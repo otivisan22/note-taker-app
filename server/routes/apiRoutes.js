@@ -7,7 +7,7 @@ const deleteNote = require("../controllers/deleteNote");
 const router = Router();
 
 router.get("/notes", getAllNotes);
-router.get("/notes", saveNewNote);
+router.post("/notes", saveNewNote);
 router.delete("/notes/:id", deleteNote);
 
 module.exports = router;
