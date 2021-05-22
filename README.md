@@ -1,6 +1,6 @@
 # note-taker-app
 
-## Click [here] to watch my video recording
+## Click [here] (https://afternoon-thicket-01555.herokuapp.com) to see the deployment of the app on heroku
 
 ## Description
 
