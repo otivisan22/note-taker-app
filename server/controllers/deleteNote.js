@@ -1,5 +1,5 @@
 const getFromDb = require("../utils/getFromDb");
-const writeToDb = require("../utils/writeToDb");
+const writeDatabase = require("../utils/writeDatabase");
 //delete
 const deleteNote = (req, res) => {
   const data = getFromDb();
@@ -8,7 +8,7 @@ const deleteNote = (req, res) => {
     return each.id !== id;
   });
 
-  writeToDb(newData);
+  writeDatabase(newData);
   res.json(newData);
 };
 

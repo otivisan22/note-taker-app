@@ -1,13 +1,13 @@
 const { v4: uuidv4 } = require("uuid");
 
 const getFromDb = require("../utils/getFromDb");
-const writeToDb = require("../utils/writeToDb");
+const writeDatabase = require("../utils/writeDatabase");
 
 const saveNewNote = (req, res) => {
   const newNote = { ...req.body, id: uuidv4() };
   const data = getFromDb();
   data.push(newNote);
-  writeToDb(data);
+  writeDatabase(data);
   res.send(newNote);
 };
 
