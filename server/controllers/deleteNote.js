@@ -1,6 +1,6 @@
 const getFromDb = require("../utils/getFromDb");
 const writeToDb = require("../utils/writeToDb");
-
+//delete
 const deleteNote = (req, res) => {
   const data = getFromDb();
   const id = req.params.id;
