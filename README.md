@@ -4,9 +4,9 @@
 
 ## Description
 
-Our task was to build to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so also we needed to write a unit test for every part of our code and ensure that it passes each test.
-
----
+Our task was to modify starter code in order to create an application called Note Taker that can be used to write, save and delete notes. The application's front end was already created, our job was to build the back end and to blend both together, and at the end to deploy our app to Heroku.
+This application will use an Express.js back end and will save and retrieve data from a JSON file.
+As a future improvement for this app I will add an option of edit notes as well. Stay tuned.
 
 ## Requirements
 
@@ -21,22 +21,22 @@ For development, you will only need Node.js and a node global package installed 
 ## What did we do?
 
 - Install npm i
-- Install npm i jest:watch
-- Install npm i jest
-- Install npm i inquirer
-- Developed the team profile generator by creating the employee, engineer, intern and manager classes and after tested all the classes with jest test
-- npm run test:watch for the first round of tests
-- all tests has been successful
-- Using inquirer we have generated/prompt the questions
-- Created the init function in order to start the app and render the questions and answers
-- Used w while loop in order to destructed the object that each team member needed to rendered
-- The html file which is rendering the team profile card can be seen
+- Install npm i express
+- npm i --save-dev nodemon
+- npm i cors
+- npm i uuid
+- Developed from scratch the bak end of this by using Express.js
+- By using express routing (get, post and delete) we have write, save and delete notes
+- Also we have imported uuid package in order to save data in JSON file with an unique ID
+- The application can write, save and delete notes
+- For future challenges this application wil be able to edit notes as well
 
 ## Running the project
 
-    $ npm start
+    $ npm run start
+
+    The application will invite to follow the link on the local host.
 
 ## Testing
 
-    $ npm run test:watch
-    $ npm run test
+For future challenges this application will have also include test, even while developing we have performed test while adding, saving and deleting notes.
