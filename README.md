@@ -37,6 +37,14 @@ For development, you will only need Node.js and a node global package installed 
 
     The application will invite to follow the link on the local host.
 
+## Screenshots
+
+![screenshot1](.public/assets/screenshots/note.app.jpg)
+![screenshot2](.public/assets/screenshots/add.note.jpg)
+![screenshot3](.public/assets/screenshots/save.note.jpg)
+![screenshot4](.public/assets/screenshots/save.note.jpg)
+![screenshot5](.public/assets/screenshots/note.taker.jpg)
+
 ## Testing
 
 For future challenges this application will have also include test, even while developing we have performed test while adding, saving and deleting notes.
