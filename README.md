@@ -39,11 +39,11 @@ For development, you will only need Node.js and a node global package installed 
 
 ## Screenshots
 
-![screenshot1](.public/assets/screenshots/note.app.jpg)
-![screenshot2](.public/assets/screenshots/add.note.jpg)
-![screenshot3](.public/assets/screenshots/save.note.jpg)
-![screenshot4](.public/assets/screenshots/save.note.jpg)
-![screenshot5](.public/assets/screenshots/note.taker.jpg)
+![screenshot1](public/assets/screenshots/note1.png)
+![screenshot2](public/assets/screenshots/note2.png)
+![screenshot3](public/assets/screenshots/note3.png)
+![screenshot4](public/assets/screenshots/note4.png)
+![screenshot5](public/assets/screenshots/note5.png)
 
 ## Testing
 
